@@ -5,8 +5,8 @@
  $password = "";
  $dbname = "cms";
  $conn = mysqli_connect($servername,$username,$password,$dbname);
- if(@conn)
+ /*if($conn)
 	 echo "Connection Est";
  else 
-	 echo "Connection not Est";
+	 echo "Connection not Est";*/
  ?>
