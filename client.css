@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+header {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+}
+#logo {
+  width: 150px;
+  height: 150px;
+  transform: translateY(-30px);
+}
+.navigation {
+  background-color: rgb(233, 173, 8);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+.navigation ul li {
+  font-weight: 300;
+  font-size: large;
+  color: white;
+  padding: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.navigation ul li:hover {
+  background-color: rgb(187, 143, 23);
+  box-shadow: inset 2px 2px 2px grey, 2px 2px 2px wheat;
+  cursor: pointer;
+}
+#search {
+  height: 2vw;
+  width: 12vw;
+  min-width: 180px;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.5em;
+  padding: 1rem 1rem;
+  box-shadow: 2px 2px 5px #666 inset;
+  position: absolute;
+  right: 4px;
+  top: 10px;
+}
+
+#search:focus {
+  border: 4px solid cornflowerblue;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.footer {
+  z-index: 20;
+  width: 100%;
+  background-color: wheat;
+  opacity: 0.5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.footer:hover {
+  opacity: 1;
+}
+.order-btn {
+  font-weight: 300;
+  font-size: large;
+  background-color: rgb(212, 108, 22);
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.order-btn:hover {
+  cursor: pointer;
+}
+section {
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(175, 174, 174);
+}
+.container {
+  height: 400px;
+  background-color: wheat;
+  width: auto;
+  padding: 10px 20px;
+  margin: 20px 20px 20px 20px;
+}
+.img-container {
+}
+.img-container img {
+  width: 350px;
+  height: 250px;
+}
+#cart-btn {
+  font-weight: 200;
+  font-size: medium;
+  background-color: rgb(29, 151, 29);
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  float: right;
+}
