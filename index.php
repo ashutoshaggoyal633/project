@@ -1,6 +1,5 @@
 <?php
 include ("connection.php");
-$c= 1;
 $query = "SELECT * FROM cms.menu";
 $data = mysqli_query($conn,$query);
 //$total = mysqli_num_rows($data);
